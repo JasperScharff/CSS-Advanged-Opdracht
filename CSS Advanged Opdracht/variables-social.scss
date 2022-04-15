@@ -1,0 +1,17 @@
+//VARIABLES 
+@mixin bodyColor($color, $content) {
+    color: white;
+    margin-top: 0px;
+    background-color: $color;
+    transition:  1s ease-in;
+
+    &:hover {
+        padding-right: 100px;
+            &::after {
+                content: $content;
+                margin-left: 10px;
+                font-size: 10px;
+                white-space: nowrap;
+            }
+    }
+} 
